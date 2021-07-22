@@ -1,0 +1,13 @@
+global:
+  resolve_timeout: 10s
+  slack_api_url: '<your-slack-api-hook-here>'
+
+route:
+  receiver: 'slack-notifications'
+  # All alerts in a notification have the same value for these labels.
+  group_by: ['...']
+
+receivers:
+- name: 'slack-notifications'
+  slack_configs:
+  - channel: '#general'

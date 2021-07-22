@@ -1,0 +1,4 @@
+django==2.2.1
+psycopg2-binary>=2.8
+django-prometheus==2.1.0
+prometheus-client==0.11.0

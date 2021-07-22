@@ -1,0 +1,12 @@
+groups:
+  - name: DemoAlerts
+    rules:
+      - alert: InstanceDown 
+        expr: up{job="services"} < 1 
+        for: 10s
+
+  - name: workload
+    rules: 
+      - alert: HeavyWorkload
+        expr: request_fake_workload_seconds{job="services"} > 5
+        for: 10s
