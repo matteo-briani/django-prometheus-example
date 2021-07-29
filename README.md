@@ -1,5 +1,6 @@
 # minimal-django-prometheus
-Minimal Django-Prometheus 
+Minimal Django-Prometheus example using docker-compose.
+Not tested.  Work in progress.
 
 ## How to get to this point
 An easy way to start a Django app in Docker is [here](https://docs.docker.com/samples/django/).
